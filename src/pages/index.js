@@ -1,3 +1,4 @@
+export { default as Main } from './main';
 export { default as Melon } from './melon';
 export { default as Genie } from './genie';
 export { default as Bugs } from './bugs';
