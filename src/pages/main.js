@@ -1,5 +1,10 @@
+import * as C from '../components';
 const Main = () => {
-  return <>main</>;
+  return (
+    <>
+      <C.PageBase />
+    </>
+  );
 };
 
 export default Main;

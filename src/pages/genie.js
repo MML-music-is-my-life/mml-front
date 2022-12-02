@@ -1,5 +1,6 @@
+import * as C from '../components';
 const Genie = () => {
-  return <>genie</>;
+  return <C.PageBase></C.PageBase>;
 };
 
 export default Genie;

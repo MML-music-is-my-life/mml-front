@@ -1,5 +1,10 @@
+import * as C from '../components';
 const Melon = () => {
-  return <>melon</>;
+  return (
+    <>
+      <C.PageBase />
+    </>
+  );
 };
 
 export default Melon;

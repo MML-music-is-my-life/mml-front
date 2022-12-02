@@ -1,5 +1,10 @@
+import * as C from '../components';
 const Bugs = () => {
-  return <>bugs</>;
+  return (
+    <>
+      <C.PageBase></C.PageBase>
+    </>
+  );
 };
 
 export default Bugs;
