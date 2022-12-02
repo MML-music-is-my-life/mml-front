@@ -25,6 +25,16 @@ export const LogosBox = styled.div`
   align-items: center;
 `;
 
+export const ChartBox = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+`;
+
 export const LogoBackground = styled.div`
   width: 300px;
   height: 200px;

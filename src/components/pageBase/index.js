@@ -74,21 +74,11 @@ const PageBase = () => {
             </S.LogoBackground>
           </Link>
         </S.LogosBox>
-        <div
-          css={css`
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            font-size: 1.5rem;
-          `}
-        >
+        <S.ChartBox>
           {window.location.pathname === '/'
             ? `플랫폼 로고를 클릭하여 음원 순위를 확인해보세요!`
             : null}
-        </div>
+        </S.ChartBox>
       </S.ContentsBox>
     </S.MainDiv>
   );
