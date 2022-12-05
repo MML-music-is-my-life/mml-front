@@ -4,19 +4,19 @@ import * as S from './style';
 import * as C from '../../components';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-const ChartBox = () => {
-  const [melon, setMelon] = useState();
+const ChartBox = ({ platform }) => {
+  const [chart, setChart] = useState();
+  console.log(platform);
 
-  const melonData = () => {
-    axios.get('/data/melon.json').then(res => {
-      setMelon(res.data.data);
+  const getData = () => {
+    axios.get(`/data/${platform}.json`).then(res => {
+      setChart(res.data.data);
     });
   };
 
   useEffect(() => {
-    melonData();
-    console.log(melon);
-  }, [melon]);
+    getData();
+  }, [getData]);
 
   return (
     <S.mainDiv>
@@ -31,7 +31,7 @@ const ChartBox = () => {
         </div>
         <div>앨범</div>
       </S.divStyle>
-      {melon?.map(chart => (
+      {chart?.map(chart => (
         <C.Chart
           rank={chart.rank}
           albumArt={chart.albumArt}
