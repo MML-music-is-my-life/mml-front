@@ -3,6 +3,7 @@ import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
 import * as I from '../../assets/svg';
 import * as S from './style';
+import * as C from '../../components';
 import melonImg from '../../assets/img/melon.png';
 import genieImg from '../../assets/img/genie.png';
 import bugsImg from '../../assets/img/bugs.png';
@@ -75,9 +76,11 @@ const PageBase = () => {
           </Link>
         </S.LogosBox>
         <S.ChartBox>
-          {window.location.pathname === '/'
-            ? `플랫폼 로고를 클릭하여 음원 순위를 확인해보세요!`
-            : null}
+          {window.location.pathname === '/' ? (
+            `플랫폼 로고를 클릭하여 음원 순위를 확인해보세요!`
+          ) : (
+            <C.Chart />
+          )}
         </S.ChartBox>
       </S.ContentsBox>
     </S.MainDiv>

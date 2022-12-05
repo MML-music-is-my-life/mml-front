@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
 export const MainDiv = styled.div`
+  font-family: 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, sans-serif;
   width: 100vw;
   height: 100vh;
   display: flex;
