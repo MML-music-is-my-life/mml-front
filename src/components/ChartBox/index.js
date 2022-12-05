@@ -4,6 +4,7 @@ import * as S from './style';
 import * as C from '../../components';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+
 const ChartBox = ({ platform }) => {
   const [chart, setChart] = useState();
   console.log(platform);
@@ -31,6 +32,7 @@ const ChartBox = ({ platform }) => {
         </div>
         <div>앨범</div>
       </S.divStyle>
+      <C.DropDown />
       {chart?.map(chart => (
         <C.Chart
           rank={chart.rank}
