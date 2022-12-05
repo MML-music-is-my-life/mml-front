@@ -1,22 +1,17 @@
 import * as I from '../../assets/svg';
 import * as S from './style';
 
-const Chart = () => {
+const Chart = ({ rank, albumArt, title, albumName, artistName }) => {
   return (
     <>
       <S.divBox>
-        <S.rankText>1</S.rankText>
+        <S.rankText>{rank}</S.rankText>
         <S.titleBox>
-          <S.titleImg
-            src="https://cdnimg.melon.co.kr/cm2/album/images/109/03/868/10903868_20220330103544_500.jpg/melon/resize/120/quality/80/optimize"
-            alt=""
-          />
-          <S.textDiv>사건의 지평선</S.textDiv>
+          <S.titleImg src={albumArt} alt={title} />
+          <S.textDiv>{title}</S.textDiv>
         </S.titleBox>
-        <S.textDiv>윤하 (YOUNHA)</S.textDiv>
-        <S.textDiv>
-          YOUNHA 6th Album Repackage 'END THEORY : Final Edition'
-        </S.textDiv>
+        <S.textDiv>{artistName}</S.textDiv>
+        <S.textDiv>{albumName}</S.textDiv>
         <S.changeChart>
           <I.ChartStay />
           <span></span>

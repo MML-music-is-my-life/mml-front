@@ -2,13 +2,13 @@ import styled from '@emotion/styled';
 
 export const divBox = styled.div`
   width: 90%;
-  height: 15%;
+  height: 16%;
   background: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
-  margin: 10px auto;
+  margin: 20px auto;
   align-items: center;
   box-shadow: 3px 4px 4px 3px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
@@ -30,7 +30,7 @@ export const titleBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: baseline;
+  /* justify-content: left; */
 `;
 
 export const titleImg = styled.img`

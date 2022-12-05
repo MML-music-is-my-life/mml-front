@@ -79,7 +79,7 @@ const PageBase = () => {
           {window.location.pathname === '/' ? (
             `플랫폼 로고를 클릭하여 음원 순위를 확인해보세요!`
           ) : (
-            <C.Chart />
+            <C.ChartBox />
           )}
         </S.ChartBox>
       </S.ContentsBox>
