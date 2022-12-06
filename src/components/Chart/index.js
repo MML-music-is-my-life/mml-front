@@ -22,8 +22,6 @@ const Chart = ({
         <S.textDiv>{artistName}</S.textDiv>
         <S.textDiv>{albumName}</S.textDiv>
         <S.changeChart css={{ color: bf_day < 0 ? '#1F35FF' : '#FF1F1F' }}>
-          {/* <I.ChartStay />
-          <span></span> */}
           {!isChecked ? (
             <I.ChartStay />
           ) : bf_day < 0 ? (
