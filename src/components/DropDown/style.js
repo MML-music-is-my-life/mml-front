@@ -13,11 +13,11 @@ export const dropDown = styled.input`
   visibility: hidden;
   position: absolute;
 
-  &:checked + label > div {
+  &.checked + label > div {
     transform: rotate(-360deg);
   }
 
-  &:checked + label + div {
+  &.checked + label + div {
     display: block;
     border-top: 1px solid #00000026;
   }

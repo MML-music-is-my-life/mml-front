@@ -6,9 +6,9 @@ export const mainDiv = styled.div`
 export const divStyle = styled.div`
   display: flex;
   width: 70%;
-  height: 13%;
+  height: 5%;
   justify-content: space-around;
   align-items: center;
-  margin: 20px auto;
+  margin: 5vh auto 0 auto;
   font-size: 1.7rem;
 `;

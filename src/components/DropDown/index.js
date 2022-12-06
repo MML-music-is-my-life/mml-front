@@ -1,28 +1,39 @@
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { useState } from 'react';
 import * as I from '../../assets/svg';
 import * as S from './style';
 const DropDown = () => {
+  const [select, setSelect] = useState('순위 변동');
+  const [checked, setChecked] = useState('');
+
   return (
-    <>
-      <div className="App">
-        <S.container>
-          <S.dropDown id="dropdown" type="checkbox" />
-          <S.dropDownLabel for="dropdown">
-            <span>순위 변동</span>
-            <S.Icon>
-              <I.Arrow />
-            </S.Icon>
-          </S.dropDownLabel>
-          <S.contentBox>
-            <ul>
-              <S.list>순위 변동</S.list>
-              <S.list>1일 전</S.list>
-            </ul>
-          </S.contentBox>
-        </S.container>
-      </div>
-    </>
+    <S.container>
+      <S.dropDown
+        onClick={() =>
+          checked === '' ? setChecked('checked') : setChecked('')
+        }
+        id="dropdown"
+        type="checkbox"
+        className={checked}
+      />
+      <S.dropDownLabel htmlFor="dropdown">
+        <span>{select}</span>
+        <S.Icon>
+          <I.Arrow />
+        </S.Icon>
+      </S.dropDownLabel>
+      <S.contentBox>
+        <ul>
+          <S.list
+            onClick={() => {
+              setSelect('1일 전');
+              setChecked('');
+            }}
+          >
+            1일 전
+          </S.list>
+        </ul>
+      </S.contentBox>
+    </S.container>
   );
 };
 
