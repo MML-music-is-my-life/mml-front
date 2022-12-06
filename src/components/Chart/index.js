@@ -18,7 +18,7 @@ const Chart = ({
         <S.titleBox>
           <S.titleImg src={albumArt} alt={title} />
           <S.textDiv
-            href={`https://www.google.com/search?q=${title}&rlz=1C5CHFA_enKR982KR985&oq=${title}&aqs=chrome..69i57j69i60l3.571j0j15&sourceid=chrome&ie=UTF-8`}
+            href={`https://www.youtube.com/results?search_query=${title}`}
             target="_blank"
           >
             {title}
