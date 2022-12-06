@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import * as I from '../../assets/svg';
 import * as S from './style';
 
