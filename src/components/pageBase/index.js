@@ -19,6 +19,7 @@ const PageBase = ({ platform }) => {
       >
         <I.Logo />
       </Link>
+      <C.Button platform={platform} />
       <S.ContentsBox
         css={{
           background:

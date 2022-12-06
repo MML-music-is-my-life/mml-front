@@ -34,17 +34,9 @@ const ChartBox = ({ platform }) => {
         <div css={{ marginLeft: '12%' }}>아티스트</div>
         <div>앨범</div>
       </S.divStyle>
-      <div
-        css={css`
-          width: 93%;
-          height: 50px;
-          display: flex;
-          justify-content: flex-end;
-          margin: 0 auto;
-        `}
-      >
+      <S.dropDownBox>
         <C.DropDown setIsChecked={clickedTrue} />
-      </div>
+      </S.dropDownBox>
       {chart?.map(chart => (
         <C.Chart
           isChecked={isChecked}

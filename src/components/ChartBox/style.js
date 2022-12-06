@@ -12,3 +12,11 @@ export const divStyle = styled.div`
   margin: 5vh auto 0 auto;
   font-size: 1.7rem;
 `;
+
+export const dropDownBox = styled.div`
+  width: 93%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+`;
