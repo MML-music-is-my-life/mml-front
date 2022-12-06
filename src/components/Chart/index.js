@@ -17,10 +17,25 @@ const Chart = ({
         <S.rankText>{rank}</S.rankText>
         <S.titleBox>
           <S.titleImg src={albumArt} alt={title} />
-          <S.textDiv>{title}</S.textDiv>
+          <S.textDiv
+            href={`https://www.google.com/search?q=${title}&rlz=1C5CHFA_enKR982KR985&oq=${title}&aqs=chrome..69i57j69i60l3.571j0j15&sourceid=chrome&ie=UTF-8`}
+            target="_blank"
+          >
+            {title}
+          </S.textDiv>
         </S.titleBox>
-        <S.textDiv>{artistName}</S.textDiv>
-        <S.textDiv>{albumName}</S.textDiv>
+        <S.textDiv
+          href={`https://www.google.com/search?q=${artistName}&rlz=1C5CHFA_enKR982KR985&oq=${artistName}&aqs=chrome..69i57j69i60l3.571j0j15&sourceid=chrome&ie=UTF-8`}
+          target="_blank"
+        >
+          {artistName}
+        </S.textDiv>
+        <S.textDiv
+          href={`https://www.google.com/search?q=${albumName}&rlz=1C5CHFA_enKR982KR985&oq=${albumName}&aqs=chrome..69i57j69i60l3.571j0j15&sourceid=chrome&ie=UTF-8`}
+          target="_blank"
+        >
+          {albumName}
+        </S.textDiv>
         <S.changeChart css={{ color: bf_day < 0 ? '#1F35FF' : '#FF1F1F' }}>
           {!isChecked ? (
             <I.ChartStay />

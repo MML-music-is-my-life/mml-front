@@ -42,17 +42,22 @@ export const titleImg = styled.img`
 
 export const textDiv = styled.a`
   width: 10vw;
+  color: #000;
+  text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
+
+  &:hover {
+    color: #616161;
+    text-decoration: underline;
+  }
 `;
 
 export const changeChart = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* justify-content: center; */
-  /* margin-right: 10px; */
   width: 60px;
 `;
