@@ -32,7 +32,17 @@ const ChartBox = ({ platform }) => {
         </div>
         <div>앨범</div>
       </S.divStyle>
-      <C.DropDown />
+      <div
+        css={css`
+          width: 93%;
+          height: 50px;
+          display: flex;
+          justify-content: flex-end;
+          margin: 0 auto;
+        `}
+      >
+        <C.DropDown />
+      </div>
       {chart?.map(chart => (
         <C.Chart
           rank={chart.rank}

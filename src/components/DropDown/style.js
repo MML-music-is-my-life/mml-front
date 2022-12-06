@@ -27,7 +27,7 @@ export const dropDownLabel = styled.label`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 12px 20px;
 
   &:hover {
     cursor: pointer;
