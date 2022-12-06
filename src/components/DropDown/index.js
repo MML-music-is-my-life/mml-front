@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import * as I from '../../assets/svg';
 import * as S from './style';
-const DropDown = () => {
+const DropDown = ({ setIsChecked }) => {
   const [select, setSelect] = useState('순위 변동');
   const [checked, setChecked] = useState('');
 
@@ -27,6 +27,7 @@ const DropDown = () => {
             onClick={() => {
               setSelect('1일 전');
               setChecked('');
+              setIsChecked(true);
             }}
           >
             1일 전

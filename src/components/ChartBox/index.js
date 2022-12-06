@@ -3,10 +3,15 @@ import { css } from '@emotion/react';
 import * as S from './style';
 import * as C from '../../components';
 import axios from 'axios';
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const ChartBox = ({ platform }) => {
   const [chart, setChart] = useState();
+  const [isChecked, setIsChecked] = useState(false);
+
+  const clickedTrue = data => {
+    setIsChecked(data);
+  };
 
   const getData = async () => {
     await axios.get(`/data/${platform}.json`).then(res => {
@@ -38,15 +43,17 @@ const ChartBox = ({ platform }) => {
           margin: 0 auto;
         `}
       >
-        <C.DropDown />
+        <C.DropDown setIsChecked={clickedTrue} />
       </div>
       {chart?.map(chart => (
         <C.Chart
+          isChecked={isChecked}
           rank={chart.rank}
           albumArt={chart.albumArt}
           title={chart.title}
           albumName={chart.albumName}
           artistName={chart.artistName}
+          bf_day={chart.bf_day}
           key={chart.id}
         />
       ))}

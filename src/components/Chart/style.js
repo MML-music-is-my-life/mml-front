@@ -51,6 +51,8 @@ export const textDiv = styled.a`
 export const changeChart = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-right: 10px;
+  justify-content: space-around;
+  /* justify-content: center; */
+  /* margin-right: 10px; */
+  width: 60px;
 `;
