@@ -36,17 +36,17 @@ const Chart = ({
         >
           {albumName}
         </S.textDiv>
-        <S.changeChart css={{ color: bf_day < 0 ? '#1F35FF' : '#FF1F1F' }}>
+        <S.changeChart css={{ color: bf_day < 0 ? '#FF1F1F' : '#1F35FF' }}>
           {!isChecked ? (
             <I.ChartStay />
           ) : bf_day < 0 ? (
             <>
-              <I.ChartDown />
+              <I.ChartUp />
               <span>{bf_day * -1}</span>
             </>
           ) : bf_day > 0 && bf_day < 900 ? (
             <>
-              <I.ChartUp />
+              <I.ChartDown />
               <span>{bf_day}</span>
             </>
           ) : bf_day === 0 ? (
